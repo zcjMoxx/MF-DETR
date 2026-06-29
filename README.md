@@ -43,16 +43,16 @@ Experiments on VisDrone show that MF-DETR improves AP and AP50 by **3.5** and **
 
 ## Ablation Study on VisDrone
 
-| Baseline | SISE | MFCF | FFAE | AP | AP50 | Params (M) | FLOPs (G) |
-|---|---|---|---|---:|---:|---:|---:|
-| yes | no | no | no | 26.7 | 44.6 | 20.0 | 57.3 |
-| yes | yes | no | no | 28.1 | 46.3 | 19.8 | 57.1 |
-| yes | no | yes | no | 29.0 | 47.9 | 20.8 | 65.9 |
-| yes | no | no | yes | 28.9 | 47.5 | 21.5 | 68.9 |
-| yes | yes | yes | no | 29.1 | 48.0 | 20.6 | 66.0 |
-| yes | yes | no | yes | 29.0 | 47.8 | 21.4 | 69.0 |
-| yes | no | yes | yes | 30.1 | 49.1 | 22.4 | 77.8 |
-| yes | yes | yes | yes | **30.2** | **49.5** | **21.8** | **73.5** |
+| Model Configuration | AP | AP50 |
+|---|---:|---:|
+| Baseline | 26.7 | 44.6 |
+| Baseline + SISE | 28.1 | 46.3 |
+| Baseline + MFCF | 29.0 | 47.9 |
+| Baseline + FFAE | 28.9 | 47.5 |
+| Baseline + SISE + MFCF | 29.1 | 48.0 |
+| Baseline + SISE + FFAE | 29.0 | 47.8 |
+| Baseline + MFCF + FFAE | 30.1 | 49.1 |
+| **Full Model** | **30.2** | **49.5** |
 
 ## Training
 
