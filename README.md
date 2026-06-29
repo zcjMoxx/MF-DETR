@@ -2,20 +2,11 @@
 
 ---
 
-This repository contains the implementation of **MF-DETR**, a degradation-oriented end-to-end detection framework for UAV small-object detection.
-
-MF-DETR is built on RT-DETR and improves small-object representation through a progressive representation recovery pipeline:
-
-- **SISE**: Statistical Intra-scale Semantic Enhancement suppresses background-dominated token responses and strengthens weak intra-scale semantics.
-- **MFCF**: Multi-scale Frequency-spatial Collaboration Fusion recovers texture, boundary, and structural details during multi-scale feature aggregation.
-- **FFAE**: Frequency-guided Feature Alignment and Enhancement corrects cross-level semantic and spatial misalignment before detection.
-
-Experiments on VisDrone show that MF-DETR improves AP and AP50 by **3.5** and **4.9** percentage points over the RT-DETR-R18 baseline.
+This repository contains the implementation of **MF-DETR** for UAV small object detection.
 
 ## Updates
 
 - Initial public release of MF-DETR-R18 training and validation code.
-- Release the cleaned MF-DETR configuration with `SISE`, `MFCF`, and `FFAE`.
 
 ## Implementations
 
